@@ -1,0 +1,15 @@
+﻿<Window x:Class="Wwc.TryProgressWindow.View.ProgressWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:util="clr-namespace:Wwc.Util;assembly=Wwc.Util"
+        util:DialogCloserExt.DialogResult="{Binding DialogResult}"
+        Title="ProgressWindow" Height="300" Width="300">
+    <Grid>
+        <ProgressBar HorizontalAlignment="Center"
+                     VerticalAlignment="Center"
+                     Height="20"
+                     Width="250"
+                     Foreground="Green"
+                     Value="{Binding ProgressValue}" />
+    </Grid>
+</Window>
